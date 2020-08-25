@@ -96,15 +96,6 @@ section.header .project-name .subtitle {
 }
 
 
-section.header .project-name .lead {
-    text-transform: uppercase;
-    margin: 0;
-    color: #dc0;
-    font-family: 'Oswald', sans-serif;
-    font-size: 125%;
-    font-weight: 600;
-    letter-spacing: 1px;
-}
 @media screen and (max-width: 800px) {
     section.header .project-name {
         font-size: 75%;
@@ -113,6 +104,39 @@ section.header .project-name .lead {
         font-size: 125%;
     }
     section.header .inner {
+        flex-direction: column;
+    }
+}
+
+section.links {
+    background: #333;
+}
+section.links .inner {
+        padding: 3rem;
+}
+section.links nav {
+    display: flex;
+    justify-content: center;
+}
+section.links a {
+    display: block;
+    flex: 1 0 auto;
+    text-decoration: none;
+    padding: 1em;
+    margin: .5em;
+    background: #444;
+    color: #eee;
+    font-weight: bold;
+    text-align: center;
+}
+section.links a:hover,
+section.links a:focus,
+section.links a:active {
+    background: #666;
+}
+
+@media screen and (max-width: 800px) {
+    section.links nav {
         flex-direction: column;
     }
 }
