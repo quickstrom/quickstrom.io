@@ -82,80 +82,13 @@
           </ul>
         </div>
       </section>
-      <section class="what-does-it-look-like">
-        <div class="inner">
-          <h2>What does it look like?</h2>
-          <p>The following specification is for a record player, with
-          a button that toggles between the <em>paused</em>
-          and <em>playing</em> states.</p>
-          <div class="code-sample">
-          <table>
-            <tbody>
-              <tr>
-                <td>
-                  <pre>readyWhen = ".record-player"</pre>
-                </td>
-                <td>It waits for a DOM element matching the CSS
-                selector <code>.record-player</code> before taking any
-                action.</td>
-              </tr>
-              <tr>
-                <td>
-                  <pre>buttonText =
-  map _.textContent (queryOne ".play-pause" { textContent })</pre>
-                         </td>
-                <td>This helper definition finds an optional text for the play/pause button.</td>
-              </tr>
-              <tr>
-                <td>
-                  <pre>actions = clicks</pre>
-                </td>
-                <td>Quickstrom generates <code>click</code> actions for all clickable elements.</td>
-              </tr>
-              <tr>
-                <td>
-                  <pre>proposition =
-  <strong>let</strong> playing = buttonText == Just "Pause"
-      paused = buttonText == Just "Play"
-      play = paused && <strong>next</strong> playing
-      pause = playing && <strong>next</strong> paused
-  <strong>in</strong> paused && <strong>always</strong> (play || pause)</pre>
-                </td>
-                <td>A proposition describes the correctness of a web application. Here we start in the <code>paused</code> state, and a valid transition is either <code>play</code> or <code>pause</code>.</td>
-              </tr>
-            </tbody>
-          </table>
-          </div>
-          <p>Now, let's run Quickstrom with a broken implementation
-          of the record player. We get a minimal behavior that 
-          violates the specification:
-          </p>
-          <div class="code-sample">
-          <pre>$ <strong>quickstrom RecordPlayer.spec.purs record-player.html</strong>
-Running test with size: 10
-Test failed. Shrinking...
-1. State
-  • .play-pause
-      - textContent = "Play"
-2. click button[0]
-3. State
-  • .play-pause
-      - textContent = "Pause"
-4. click button[0]
-<span class="error">5. State
-  • .play-pause
-      - textContent = "undefined"</span></pre>
-          </div>
-          <p>Looks like pausing broke the record player!</p>
-        </div>
-      </section>
-      <section class="roadmap">
+      <section class="learn-more">
         <div class="inner">
           <h2>Learn More</h2>
           <p>Interested in Quickstrom? Check out the following resources to learn more:</p>
           <ul>
             <li><a href="https://docs.quickstrom.io/installation.html">How to install</a></li>
-            <li><a href="https://docs.quickstrom.io/reference.html">Reference documentation</a></li>
+            <li><a href="https://docs.quickstrom.io/tutorials/first.html">Writing Your First Specification</a></li>
             <li><a href="https://wickstrom.tech/programming/2020/07/02/the-todomvc-showdown-testing-with-webcheck.html">The TodoMVC Showdown</a>, where Quickstrom found problems in multiple implementations</li>
           </ul>
         </div>
