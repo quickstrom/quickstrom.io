@@ -4,6 +4,9 @@ body {
     line-height: 1.6;
     font-size: 16px;
     color: #111;
+
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
 }
 
 *, *:before, *:after {
@@ -23,6 +26,51 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
     color: inherit;
+}
+.btn, button, input {
+    border-radius: 2px;
+    font-weight: 600;
+}
+
+.btn {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    padding: .75em 1em;
+    background: #2a2a2a;
+    background: linear-gradient(144deg, #2a2a2a 0%, #222222 100%);
+    color: #eee;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 90%;
+}
+.btn.primary {
+    background: linear-gradient(144deg, rgb(206, 134, 0) 0%, rgb(172, 112, 0) 100%);
+}
+
+.btn:hover:before,
+.btn:focus:before,
+.btn:active:before {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, .05);
+    content: "";
+}
+
+.sign-up-form input {
+    flex: 1 1 auto;
+    padding: .75em;
+    border: 0px;
+}
+.sign-up-form input[type=submit] {
+    flex: 0 1 auto;
+    margin-left: 4px;
+    background: rgba(83,41,170,1);
+    color: #fff;
 }
 
 h2 {
@@ -76,13 +124,12 @@ section.header {
 }
 section.header .inner {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
 }
 section.header .project-name {
-    text-align: center;
     flex: 1 0 auto;
     font-size: 100%;
-    margin: 4rem 0;
+    margin: 0 0 2rem 0;
 }
 section.header .project-name h1 {
     font-size: 600%;
@@ -92,7 +139,19 @@ section.header .project-name h1 {
 
 section.header .project-name .subtitle {
     margin: 0;
-    font-size: 175%;
+    font-size: 150%;
+    color: #aaa;
+}
+
+section.header nav {
+    display: flex;
+}
+section.header nav .btn {
+    margin-right: 1em;
+}
+
+section.header .sign-up-form {
+    display: flex;
 }
 
 
@@ -108,32 +167,6 @@ section.header .project-name .subtitle {
     }
 }
 
-section.links {
-    background: #333;
-}
-section.links .inner {
-        padding: 3rem;
-}
-section.links nav {
-    display: flex;
-    justify-content: center;
-}
-section.links a {
-    display: block;
-    flex: 1 0 auto;
-    text-decoration: none;
-    padding: 1em;
-    margin: .5em;
-    background: #444;
-    color: #eee;
-    font-weight: bold;
-    text-align: center;
-}
-section.links a:hover,
-section.links a:focus,
-section.links a:active {
-    background: #666;
-}
 
 @media screen and (max-width: 800px) {
     section.links nav {
@@ -208,21 +241,8 @@ section.sign-up form {
     margin: 2rem 0;
     max-width: 800px;
 }
-section.sign-up input {
-    flex: 1 1 auto;
-    font-size: 125%;
-    padding: .75em;
-    border: 0px;
-    border-radius: 0px;
-}
-section.sign-up input[type=submit] {
-    flex: 0 1 auto;
-    margin-left: 4px;
-    background: rgba(83,41,170,1);
-    color: #fff;
-}
-section.sign-up .powered-by {
-    color: #aaaaa
+section.sign-up-form .powered-by {
+    color: #aaaaaa;
 }
 @media screen and (max-width: 800px) {
     section.sign-up form {
@@ -240,7 +260,7 @@ section.sign-up .powered-by {
 
 
 section.footer {
-    background: #111;
+    background: #222;
     color: #888;
     font-size: 90%;
 }

@@ -1,130 +1,133 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8"/>
-    <title>Quickstrom</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="High-confidence browser testing" />
-    <link href="main.css" rel="stylesheet"/>
-    <link href="font-awesome/css/all.css" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@500&family=Inconsolata:wght@400;600&display=swap" rel="stylesheet"> 
-  </head>
-  <body>
-    <main>
-      <section class="header">
-        <div class="inner">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Quickstrom</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="High-confidence browser testing" />
+  <link href="main.css" rel="stylesheet" />
+  <link href="font-awesome/css/all.css" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Oswald:wght@500&family=Inconsolata:wght@400;600&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <section class="header">
+      <div class="inner">
+        <div class="presentation">
           <div class="project-name">
             <h1>Quickstrom</h1>
-            <p class="subtitle">High-confidence browser testing</p>
+            <p class="subtitle">High-confidence testing</p>
           </div>
-        </div>
-      </section>
-      <section class="links">
-        <div class="inner">
           <nav>
-            <a href="https://docs.quickstrom.io">Documentation</a>
-            <a href="https://github.com/quickstrom/quickstrom">Source Code</a>
-            <a href="https://buttondown.email/quickstrom">Newsletter</a>
+            <a class="btn primary" href="https://docs.quickstrom.io">Documentation</a>
+            <a class="btn" href="https://github.com/quickstrom/quickstrom">Source Code</a>
           </nav>
         </div>
-      </section>
-      <section class="why-quickstrom">
-        <div class="inner">
-          <h2>Why use Quickstrom?</h2>
-          <ul>
-            <li>
-              <div class="icon">
-                <i class="fas fa-dollar-sign"></i>
-              </div>
-              <div class="content">
-                <h3>Reduce testing effort</h3>
-                <p>Generate thousands of test cases instead of writing
-                  them manually. Lower the maintenance burden of your
-                  browser testing by writing concise specifications with
-                  looser coupling to your implementation.</p>
-              </div>
-            </li>
-            <li>
-              <div class="icon">
-                <i class="fas fa-tasks"></i>
-              </div>
-              <div class="content">
-                <h3>Find complex bugs</h3>
-                <p>Quickstrom simulates complex and unexpected user
-                  behavior using generative random testing. When the
-                  specification is violated, Quickstrom finds a minimal
-                  failing example.</p>
-              </div>
-            </li>
-            <li>
-              <div class="icon">
-                <i class="fas fa-brain"></i>
-              </div>
-              <div class="content">
-                <h3>Understand your system</h3>
-                <p>Focus on specifying your system, not on writing
-                  test cases. A specification lets you run Quickstrom,
-                  but can also increase your team's understanding of
-                  the system.</p>
-              </div>
-            </li>
-            <li>
-              <div class="icon">
-                <i class="fas fa-chart-line"></i>
-              </div>
-              <div class="content">
-                <h3>Adopt gradually</h3>
-                <p>Quickstrom works with any web application that renders
-                  DOM elements. Start simple, and gradually refine your
-                  specification to increase coverage and confidence.</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="learn-more">
-        <div class="inner">
-          <h2>Learn More</h2>
-          <p>Interested in Quickstrom? Check out the following resources to learn more:</p>
-          <ul>
-            <li><a href="https://docs.quickstrom.io/installation.html">How to install</a></li>
-            <li><a href="https://docs.quickstrom.io/tutorials/first.html">Writing Your First Specification</a></li>
-            <li><a href="https://wickstrom.tech/programming/2020/07/02/the-todomvc-showdown-testing-with-webcheck.html">The TodoMVC Showdown</a>, where Quickstrom found problems in multiple implementations</li>
-          </ul>
-        </div>
-      </section>
-      <section class="video">
-          <iframe src="https://www.youtube.com/embed/ZVPusaFfEtU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </section>
-      <section class="sign-up">
-        <div class="inner">
-          <h2>Stay Tuned</h2>
-          <p class="signup-message">Sign up for the newsletter to learn
-            more and get project updates. No spam, promise.</p>
-          <form
-            action="https://buttondown.email/api/emails/embed-subscribe/quickstrom"
-            method="post"
-            target="popupwindow"
-            onsubmit="window.open('https://buttondown.email/quickstrom', 'popupwindow')"
-            class="embeddable-buttondown-form"
-            >
-            <input placeholder="Enter your email" type="email" name="email" id="bd-email">
-            <input type="hidden" value="1" name="embed"></input>
-            <input type="submit" value="Subscribe"></input>
-          </form>
-          <p class="powered-by">
-            The newsletter is powered
-            by <a href="https://buttondown.email/quickstrom">ButtonDown</a>.
-          </p>
-        </div>
-      </section>
-      <section class="footer">
-        <div class="inner">
-          <p>Copyright 2020
-            &copy; <a href="https://wickstrom.tech/">Oskar
-              Wickström</a> </p>
-        </div>
-      </section>
-    </main>
-  </body>
+      </div>
+    </section>
+    
+    <section class="why-quickstrom">
+      <div class="inner">
+        <h2>Why use Quickstrom?</h2>
+        <ul>
+          <li>
+            <div class="icon">
+              <i class="fas fa-dollar-sign"></i>
+            </div>
+            <div class="content">
+              <h3>Reduce testing effort</h3>
+              <p>Generate thousands of test cases instead of writing
+                them manually. Lower the maintenance burden of your
+                browser testing by writing concise specifications with
+                looser coupling to your implementation.</p>
+            </div>
+          </li>
+          <li>
+            <div class="icon">
+              <i class="fas fa-tasks"></i>
+            </div>
+            <div class="content">
+              <h3>Find complex bugs</h3>
+              <p>Quickstrom simulates complex and unexpected user
+                behavior using generative random testing. When the
+                specification is violated, Quickstrom finds a minimal
+                failing example.</p>
+            </div>
+          </li>
+          <li>
+            <div class="icon">
+              <i class="fas fa-brain"></i>
+            </div>
+            <div class="content">
+              <h3>Understand your system</h3>
+              <p>Focus on specifying your system, not on writing
+                test cases. A specification lets you run Quickstrom,
+                but can also increase your team's understanding of
+                the system.</p>
+            </div>
+          </li>
+          <li>
+            <div class="icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <div class="content">
+              <h3>Adopt gradually</h3>
+              <p>Quickstrom works with any web application that renders
+                DOM elements. Start simple, and gradually refine your
+                specification to increase coverage and confidence.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="learn-more">
+      <div class="inner">
+        <h2>Learn More</h2>
+        <p>Interested in Quickstrom? Check out the following resources to learn more:</p>
+        <ul>
+          <li><a href="https://docs.quickstrom.io/installation.html">How to install</a></li>
+          <li><a href="https://docs.quickstrom.io/tutorials/first.html">Writing Your First Specification</a></li>
+          <li><a
+              href="https://wickstrom.tech/programming/2020/07/02/the-todomvc-showdown-testing-with-webcheck.html">The
+              TodoMVC Showdown</a>, where Quickstrom found problems in multiple implementations</li>
+        </ul>
+      </div>
+    </section>
+    <section class="video">
+      <iframe src="https://www.youtube.com/embed/ZVPusaFfEtU" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </section>
+    <section class="sign-up">
+      <div class="inner">
+        <h2>Stay Tuned</h2>
+        <p class="signup-message">Sign up for the newsletter to learn
+          more and get project updates. No spam, promise.</p>
+        <form class="sign-up-form" action="https://buttondown.email/api/emails/embed-subscribe/quickstrom" method="post" target="popupwindow"
+          onsubmit="window.open('https://buttondown.email/quickstrom', 'popupwindow')"
+          class="embeddable-buttondown-form">
+          <input placeholder="Enter your email" type="email" name="email" id="bd-email">
+          <input type="hidden" value="1" name="embed"></input>
+          <input class="btn primary" type="submit" value="Subscribe"></input>
+        </form>
+        <p class="powered-by">
+          The newsletter is powered
+          by <a href="https://buttondown.email/quickstrom">ButtonDown</a>.
+        </p>
+      </div>
+    </section>
+    <section class="footer">
+      <div class="inner">
+        <p>Copyright 2020
+          &copy; <a href="https://wickstrom.tech/">Oskar
+            Wickström</a> </p>
+      </div>
+    </section>
+  </main>
+</body>
+
 </html>
