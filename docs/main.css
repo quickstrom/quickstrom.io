@@ -190,6 +190,15 @@ section.learn-more {
     background: #ddd;
 }
 
+section.video {
+    background: #000;
+}
+section.video iframe {
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+}
+
 section.sign-up {
     background: #222;
     color: #eee;
