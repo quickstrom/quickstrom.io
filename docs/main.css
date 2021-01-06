@@ -124,7 +124,7 @@ section.header {
 }
 section.header .inner {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
 }
 section.header .project-name {
     flex: 1 0 auto;
@@ -137,10 +137,11 @@ section.header .project-name h1 {
     line-height: 1.1;
 }
 
-section.header .project-name .subtitle {
+section.header .project-name .description {
     margin: 0;
     font-size: 150%;
     color: #aaa;
+    max-width: 30em;
 }
 
 section.header nav {
@@ -150,20 +151,32 @@ section.header nav .btn {
     margin-right: 1em;
 }
 
-section.header .sign-up-form {
-    display: flex;
+section.header figure img {
+    margin-left: 2rem;
+    height: 360px;
+    width: auto;
 }
 
 
 @media screen and (max-width: 800px) {
+    section.header .inner {
+        flex-direction: column;
+    }
     section.header .project-name {
         font-size: 75%;
     }
     section.header .subtitle {
         font-size: 125%;
     }
-    section.header .inner {
-        flex-direction: column;
+    section.header figure  {
+        order: 1;
+    }
+    section.header .presentation  {
+        order: 2;
+        text-align: center;
+    }
+    section.header nav  {
+        justify-content: center;
     }
 }
 
