@@ -11,28 +11,40 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Oswald:wght@500&family=Inconsolata:wght@400;600&display=swap"
     rel="stylesheet">
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
 </head>
 
 <body>
   <main>
     <section class="header">
       <div class="inner">
-        <div class="presentation">
-          <div class="project-name">
-            <h1>Quickstrom</h1>
-            <p class="description">Quickstrom autonomously checks any type of web application. Run thousands of tests and find complex bugs.</p>
+        <nav class="top-nav">
+          <a class="github-button" href="https://github.com/sponsors/owickstrom"
+            data-color-scheme="no-preference: light; light: light; dark: light;" data-icon="octicon-heart"
+            data-size="large" aria-label="Sponsor @owickstrom on GitHub">Sponsor</a>
+          <a class="github-button" href="https://github.com/quickstrom/quickstrom"
+            data-color-scheme="no-preference: light; light: light; dark: light;" data-icon="octicon-star"
+            data-size="large" data-show-count="true" aria-label="Star quickstrom/quickstrom on GitHub">Star</a>
+        </nav>
+        <div class="presentation-wrapper">
+          <div class="presentation">
+            <div class="project-name">
+              <h1>Quickstrom</h1>
+              <p class="description">Quickstrom autonomously checks any type of web application. Run thousands of tests
+                and find complex bugs.</p>
+            </div>
+            <nav>
+              <a class="btn primary" href="https://docs.quickstrom.io">Documentation</a>
+              <a class="btn" href="https://github.com/quickstrom/quickstrom">Source Code</a>
+            </nav>
           </div>
-          <nav>
-            <a class="btn primary" href="https://docs.quickstrom.io">Documentation</a>
-            <a class="btn" href="https://github.com/quickstrom/quickstrom">Source Code</a>
-          </nav>
+          <figure>
+            <img src="diagram.svg" alt="">
+          </figure>
         </div>
-        <figure>
-          <img src="diagram.svg" alt="">
-        </figure>
       </div>
     </section>
-    
+
     <section class="why-quickstrom">
       <div class="inner">
         <h2>Why use Quickstrom?</h2>
@@ -93,7 +105,8 @@
         <p>Interested in Quickstrom? Check out the following resources to learn more:</p>
         <ul>
           <li><a href="https://docs.quickstrom.io/en/latest/installation.html">How to install</a></li>
-          <li><a href="https://docs.quickstrom.io/en/latest/tutorials/free/first.html">Writing Your First Specification</a></li>
+          <li><a href="https://docs.quickstrom.io/en/latest/tutorials/free/first.html">Writing Your First
+              Specification</a></li>
           <li><a
               href="https://wickstrom.tech/programming/2020/07/02/the-todomvc-showdown-testing-with-webcheck.html">The
               TodoMVC Showdown</a>, where Quickstrom found problems in multiple implementations</li>
@@ -110,8 +123,8 @@
         <h2>Stay Tuned</h2>
         <p class="signup-message">Sign up for the newsletter to learn
           more and get project updates. No spam, promise.</p>
-        <form class="sign-up-form" action="https://buttondown.email/api/emails/embed-subscribe/quickstrom" method="post" target="popupwindow"
-          onsubmit="window.open('https://buttondown.email/quickstrom', 'popupwindow')"
+        <form class="sign-up-form" action="https://buttondown.email/api/emails/embed-subscribe/quickstrom" method="post"
+          target="popupwindow" onsubmit="window.open('https://buttondown.email/quickstrom', 'popupwindow')"
           class="embeddable-buttondown-form">
           <input placeholder="Enter your email" type="email" name="email" id="bd-email">
           <input type="hidden" value="1" name="embed"></input>

@@ -124,6 +124,21 @@ section.header {
 }
 section.header .inner {
     display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+}
+section.header .top-nav {
+    flex: 1 1 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 3rem;
+}
+section.header .top-nav > * {
+    display: block;
+    margin-left: .25em;
+}
+section.header .presentation-wrapper {
+    display: flex;
     align-items: center;
 }
 section.header .project-name {
@@ -159,8 +174,12 @@ section.header figure img {
 
 
 @media screen and (max-width: 800px) {
-    section.header .inner {
+    section.header .presentation-wrapper {
         flex-direction: column;
+    }
+    section.header .top-nav {
+        justify-content: flex-end;
+        margin-bottom: 2rem;
     }
     section.header .project-name {
         font-size: 75%;
